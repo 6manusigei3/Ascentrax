@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ascentrax
+
+**Rise through knowledge.**
+
+Ascentrax is an interactive learning platform for preparing for Microsoft Azure Fundamentals (AZ-900) through practice questions, instant feedback, guided lessons, and progress tracking.
+
+## Key Features
+- Interactive practice quizzes with explanations.
+- Study Buddy guided lessons.
+- Quiz results and learning progress tracking.
+- Readiness estimate based on practice results.
+- Responsive, interactive dashboard.
+
+## Topics Covered
+1. Cloud concepts and computing.
+2. Cloud service types: IaaS, PaaS, and SaaS.
+3. Azure architecture and core services.
+4. Azure management and governance.
+
+## Technology Stack
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Browser local storage
 
 ## Getting Started
 
-First, run the development server:
+Requirements: Node.js and npm.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Clone the repository and install dependencies:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    git clone https://github.com/6manusigei3/Ascentrax.git
+    cd Ascentrax
+    npm install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Start the development server:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    npm run dev
 
-## Learn More
+Open http://localhost:3000 in your browser.
 
-To learn more about Next.js, take a look at the following resources:
+To build for production, run `npm run build`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Intended Users
+- Students learning cloud computing.
+- Beginners preparing for AZ-900.
+- Self-directed learners studying cloud fundamentals.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Future Improvements
+- More practice questions and detailed topic analytics.
+- Personalised revision recommendations.
+- Secure user accounts and cloud-based progress synchronisation.
+- Potential AI-assisted tutoring.
 
-## Deploy on Vercel
+## Disclaimer
+Ascentrax is an independent learning project, not an official Microsoft product. Its practice questions are not official exam questions, and its readiness estimate does not guarantee exam performance.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Repository
+https://github.com/6manusigei3/Ascentrax
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Practice with purpose. Prepare with confidence.**
