@@ -24,3 +24,190 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+ 
+/* Ascentrax: subtle motion and accessible animation */
+.ascentrax-word-in {
+  animation: ascentrax-word-enter 450ms ease-out both;
+}
+
+@keyframes ascentrax-word-enter {
+  from {
+    opacity: 0;
+    transform: translateY(9px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ascentrax-word-in {
+    animation: none;
+  }
+}
+
+ 
+/* Ascentrax hero: soft, restrained motion */
+.ascentrax-hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 15rem;
+  height: 15rem;
+  right: -4rem;
+  top: -6rem;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(120, 164, 112, 0.22), transparent 70%);
+  animation: ascentrax-glow 7s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+.ascentrax-hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 11rem;
+  height: 11rem;
+  right: 10rem;
+  bottom: -8rem;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(216, 234, 167, 0.28), transparent 70%);
+  animation: ascentrax-glow 9s ease-in-out infinite alternate-reverse;
+  pointer-events: none;
+}
+
+@keyframes ascentrax-glow {
+  from { transform: translate3d(0, 0, 0) scale(0.95); }
+  to { transform: translate3d(-12px, 10px, 0) scale(1.08); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ascentrax-hero::before,
+  .ascentrax-hero::after {
+    animation: none;
+  }
+}
+
+ 
+/* Gentle dashboard entrance */
+.ascentrax-page {
+  animation: ascentrax-page-enter 550ms ease-out both;
+}
+
+@keyframes ascentrax-page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ascentrax-page {
+    animation: none;
+  }
+}
+
+ 
+/* Dynamic Ascentrax welcome banner */
+.ascentrax-hero::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  width: 19rem;
+  height: 19rem;
+  right: -5rem;
+  top: -9rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(120, 164, 112, .24), transparent 70%);
+  animation: ascentrax-glow 7s ease-in-out infinite alternate;
+}
+
+.ascentrax-hero::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  width: 14rem;
+  height: 14rem;
+  right: 7rem;
+  bottom: -10rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(216, 234, 167, .3), transparent 70%);
+  animation: ascentrax-glow 9s ease-in-out infinite alternate-reverse;
+}
+
+.ascentrax-word-in {
+  animation: ascentrax-word-enter 450ms ease-out both;
+}
+
+.ascentrax-readiness-ring {
+  display: grid;
+  place-items: center;
+  width: 180px;
+  height: 180px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  padding: 9px;
+  box-shadow: 0 14px 35px rgba(23, 77, 59, .12);
+  animation: ascentrax-ring-enter 800ms cubic-bezier(.2, .8, .2, 1) both;
+  transition: box-shadow 250ms ease, transform 250ms ease;
+}
+
+.ascentrax-readiness-ring:hover {
+  transform: scale(1.035);
+  box-shadow: 0 18px 40px rgba(23, 77, 59, .17);
+}
+
+.ascentrax-ring-inner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #FFFFFF;
+}
+
+.ascentrax-action:active {
+  transform: scale(.98);
+}
+
+@keyframes ascentrax-word-enter {
+  from { opacity: 0; transform: translateY(9px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ascentrax-ring-enter {
+  from { opacity: 0; transform: scale(.88) rotate(-12deg); }
+  to { opacity: 1; transform: scale(1) rotate(0); }
+}
+
+@keyframes ascentrax-glow {
+  from { transform: translate3d(0, 0, 0) scale(.95); }
+  to { transform: translate3d(-12px, 10px, 0) scale(1.08); }
+}
+
+@media (max-width: 640px) {
+  .ascentrax-readiness-ring {
+    width: 156px;
+    height: 156px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ascentrax-hero::before,
+  .ascentrax-hero::after,
+  .ascentrax-word-in,
+  .ascentrax-readiness-ring {
+    animation: none !important;
+    transition: none !important;
+  }
+}
