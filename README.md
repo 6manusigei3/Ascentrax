@@ -2,7 +2,7 @@
 
 **Rise through knowledge.**
 
-Ascentrax is an interactive learning platform for preparing for Microsoft Azure Fundamentals (AZ-900) through practice questions, instant feedback, guided lessons, and progress tracking.
+Ascentrax is an interactive learning platform for preparing for Microsoft Azure Fundamentals (AZ-900) through practice questions, instant feedback, guided lessons, and progress tracking
 
 ## Key Features
 - Interactive practice quizzes with explanations.
